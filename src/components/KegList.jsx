@@ -1,4 +1,5 @@
 import React from 'react';
+import Keg from './Keg';
 
 const kegList = {
   masterKegList: [
@@ -56,6 +57,7 @@ const kegList = {
 function KegList() {
   return(
     <div>
+      <Keg/>
     </div>
   );
 }

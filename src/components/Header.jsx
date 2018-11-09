@@ -28,13 +28,13 @@ function Header() {
           height: 100px;
           width: 100px;
         }
-        h1 {
+        .barrel-house {
           font-family: 'Bowlby One SC', cursive;
         }
       `}</style>
       <div className="logo-styles">
         <img src={keg}/>
-        <h1>Barrel House</h1>
+        <h1 className="barrel-house">Barrel House</h1>
       </div>
     </div>
   );
