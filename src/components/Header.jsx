@@ -1,7 +1,7 @@
 import React from 'react';
 import WebFont from 'webfontloader';
-import AdminPortal from './AdminPortal';
 import keg from '../assets/images/keg.png';
+import { Link } from 'react-router-dom';
 
 WebFont.load({
   google: {
@@ -36,6 +36,9 @@ function Header() {
       <div className="logo-styles">
         <img src={keg}/>
         <h1 className="barrel-house">Barrel House</h1>
+      </div>
+      <div>
+        <Link to="/">Users</Link> | <Link to="/admin">Administrator</Link>
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './Header';
 import KegList from './KegList';
-import AdminPortal from './AdminPortal';
+import Admin from './Admin';
+import Links from './Links';
 import { Switch, Route } from 'react-router-dom';
 
 function App(){
@@ -17,8 +18,9 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={KegList} />
-        <Route path='/adminportal' component={AdminPortal} />
+        <Route path='/admin' component={Admin} />
       </Switch>
+      <Links/>
     </div>
   );
 }

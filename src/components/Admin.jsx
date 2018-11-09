@@ -1,6 +1,6 @@
 import React from 'react';
 
-function AdminPortal() {
+function Admin() {
   return(
     <div className="admin-box">
       <style>{`
@@ -20,4 +20,4 @@ function AdminPortal() {
   );
 }
 
-export default AdminPortal;
+export default Admin;
