@@ -30,15 +30,25 @@ function Header() {
           height: 100px;
         }
         .barrel-house {
-          font-family: 'Bowlby One SC', cursive;
+          font-family: 'Bowlby One SC';
+        }
+        .links-box {
+          position: absolute;
+          margin-top: 10px;
+          margin-left: 600px;
+        }
+        .links {
+          font-family: helvetica;
+          font-weight: bold;
+          color: #F7F3E3;
         }
       `}</style>
       <div className="logo-styles">
         <img src={keg}/>
         <h1 className="barrel-house">Barrel House</h1>
       </div>
-      <div>
-        <Link to="/">Users</Link> | <Link to="/admin">Administrator</Link>
+      <div className="links-box">
+        <Link to="/" style={{ textDecoration: 'none' }}><span className="links">Users</span></Link> | <Link to="/admin" style={{ textDecoration: 'none' }}><span className="links">Administrator</span></Link>
       </div>
     </div>
   );
