@@ -32,7 +32,7 @@ function Header() {
           font-family: 'Bowlby One SC', cursive;
         }
       `}</style>
-    <div className="logo-styles">
+      <div className="logo-styles">
         <img src={keg}/>
         <h1>Barrel House</h1>
       </div>
