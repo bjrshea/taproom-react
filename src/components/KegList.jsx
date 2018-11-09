@@ -54,7 +54,13 @@ const masterKegList = [
 
 function KegList() {
   return(
-    <div>
+    <div className="box-container">
+      <style>{`
+        .box-container {
+          display: flex;
+          margin-top: 5%;
+        }
+      `}</style>
       {masterKegList.map((keg, index) =>
         <Keg
           name={keg.name}

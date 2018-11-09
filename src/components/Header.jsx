@@ -25,8 +25,8 @@ function Header() {
           margin: 10px 0;
         }
         img {
-          height: 100px;
           width: 100px;
+          height: 100px;
         }
         .barrel-house {
           font-family: 'Bowlby One SC', cursive;
