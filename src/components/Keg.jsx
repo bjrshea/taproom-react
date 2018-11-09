@@ -17,11 +17,12 @@ function Keg(props) {
           border: 2px solid #2B303A;
           border-radius: 5px;
           background-color: #7A7265;
+          font-family: helvetica;
           color: #F7F3E3;
         }
         .pints-remaining {
           border-top: 1px solid black;
-          padding-top: 10px;
+          padding-top: 30px;
         }
       `}</style>
       <div className="keg-info">

@@ -21,7 +21,7 @@ function Error404(){
       `}</style>
       <img className="busey" src={busey}/>
       <h3 className="text">Whoops, this is probably not where you want to be.</h3>
-      <h3 className="text">Why do you trink that search again?</h3>
+      <h3 className="text">Why don't you try that search again?</h3>
     </div>
   );
 }
