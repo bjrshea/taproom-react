@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 WebFont.load({
   google: {
-    families: ['Bowlby One SC', 'cursive']
+    families: ['Bowlby One SC']
   }
 });
 
