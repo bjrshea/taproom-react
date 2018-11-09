@@ -34,8 +34,8 @@ function Header() {
         }
         .links-box {
           position: absolute;
-          margin-top: 10px;
-          margin-left: 600px;
+          margin-top: 15px;
+          margin-left: 42%;
         }
         .links {
           font-family: helvetica;
@@ -48,7 +48,7 @@ function Header() {
         <h1 className="barrel-house">Barrel House</h1>
       </div>
       <div className="links-box">
-        <Link to="/" style={{ textDecoration: 'none' }}><span className="links">Users</span></Link> | <Link to="/admin" style={{ textDecoration: 'none' }}><span className="links">Administrator</span></Link>
+        <Link to="/" style={{ textDecoration: 'none' }}><span className="links">Patrons</span></Link> | <Link to="/admin" style={{ textDecoration: 'none' }}><span className="links">Administrators</span></Link>
       </div>
     </div>
   );
