@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header';
 
 function App(){
   return (
@@ -9,6 +10,7 @@ function App(){
             padding: 0;
           }
       `}</style>
+      <Header/>
     </div>
   );
 }
