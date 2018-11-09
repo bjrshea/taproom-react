@@ -58,7 +58,10 @@ function KegList() {
       <style>{`
         .box-container {
           display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
           margin-top: 5%;
+          margin-bottomp: 5%;
         }
       `}</style>
       {masterKegList.map((keg, index) =>
