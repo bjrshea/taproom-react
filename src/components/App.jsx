@@ -3,7 +3,12 @@ import React from 'react';
 function App(){
   return (
     <div>
-      <h1>React Project Shell</h1>
+      <style jsx global>{`
+          body {
+            margin: 0;
+            padding: 0;
+          }
+      `}</style>
     </div>
   );
 }
