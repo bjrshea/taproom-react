@@ -1,5 +1,6 @@
 import React from 'react';
 import WebFont from 'webfontloader';
+import AdminPortal from './AdminPortal';
 import keg from '../assets/images/keg.png';
 
 WebFont.load({
