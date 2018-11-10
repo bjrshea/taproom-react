@@ -66,8 +66,8 @@ function KegList() {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          margin-top: 5%;
-          margin-bottomp: 5%;
+          margin-top: 7%;
+          margin-bottom: 5%;
         }
       `}</style>
       {masterKegList.map((keg, index) =>

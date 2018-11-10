@@ -6,6 +6,13 @@ function Admin() {
       <style>{`
         .admin-box {
           display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 7%;
+          margin-bottom: 7%;
+        }
+        .admin-info {
+          display: flex;
           flex-direction: column;
           align-items: center;
           width: 380px;
@@ -16,6 +23,9 @@ function Admin() {
           color: #F7F3E3;
         }
       `}</style>
+      <div className="admin-info">
+        
+      </div>
     </div>
   );
 }

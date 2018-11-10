@@ -13,7 +13,8 @@ function Keg(props) {
     <div className="keg-box">
       <style>{`
         .keg-box {
-          margin: 2%;
+          margin-right: 2%;
+          margin-bottom: 2%;
         }
         .keg-info {
           display: flex;
