@@ -10,7 +10,7 @@ Building an application with Angular was cool, but it's time to give another cli
 
 This project uses React to build a taproom that allows admins to update their keg list and allows users to view those kegs. For a look at what the project looked like in Angular, check the "Links" section below.
 
-As I built this project, I started to get the sense that React takes a much granular approach to building components. In Angular, I was building fairly robust applications that made multiple API calls, however, it was only necessary to create one or two components. 
+As I built this project, I started to get the sense that components in React tend to be much more granular than components in Angular. In Angular, I was building fairly robust applications that made multiple API calls, however, it was only necessary to create one or two components. 
 
 ## Construction
 
