@@ -10,6 +10,8 @@ Building an application with Angular was cool, but it's time to give another cli
 
 This project uses React to build a taproom that allows admins to update their keg list and allows users to view those kegs. For a look at what the project looked like in Angular, check the "Links" section below.
 
+As I built this project, I started to get the sense that React takes a much granular approach to building components. In Angular, I was building fairly robust applications that made multiple API calls, however, it was only necessary to create one or two components. 
+
 ## Construction
 
 ![alt text](src/assets/images/component_tree.png "Component tree")
@@ -49,7 +51,8 @@ From the project directory:
 
 ## Notes & Challenges
 
-* None thus far
+1. The first thing I found challenging with this project was setting up my linter. There were some specific installs I needed that I ended up searching for online. In the end, I created a dev environment shell that works great.
+2. I had an issue figuring out where I should place/style certain divs. This became a bit of an issue with my Keg List & Keg components, but I was able to break down where I needed certain styles.
 
 ## Links
 
