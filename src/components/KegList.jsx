@@ -5,6 +5,7 @@ const masterKegList = [
   {
     name: 'Vaporizer',
     brewer: 'Double Mountain',
+    location: 'Portland, OR',
     type: 'IPA',
     abv: '7.2%',
     price: 6,
@@ -13,6 +14,7 @@ const masterKegList = [
   {
     name: 'What Rough Beast',
     brewer: 'Breakside',
+    location: 'Portland, OR',
     type: 'IPA',
     abv: '6.8%',
     price: 5,
@@ -21,6 +23,7 @@ const masterKegList = [
   {
     name: 'Turmoil',
     brewer: 'Barley Brown',
+    location: 'Baker City, OR',
     type: 'Cascadian Dark Ale',
     abv: '7.8%',
     price: 7,
@@ -29,6 +32,7 @@ const masterKegList = [
   {
     name: 'Bodhizafa',
     brewer: 'Georgetown',
+    location: 'Seattle, WA',
     type: 'IPA',
     abv: '6.9%',
     price: 6,
@@ -37,6 +41,7 @@ const masterKegList = [
   {
     name: 'Straight Outta Portland',
     brewer: 'Migration',
+    location: 'Portland, OR',
     type: 'IPA',
     abv: '7.3%',
     price: 6,
@@ -45,6 +50,7 @@ const masterKegList = [
   {
     name: 'Chocolate Shake',
     brewer: 'Boulder Beer',
+    location: 'Boulder, CO',
     type: 'Porter',
     abv: '5.9%',
     price: 5,
@@ -68,6 +74,7 @@ function KegList() {
         <Keg
           name={keg.name}
           brewer={keg.brewer}
+          location={keg.location}
           type={keg.type}
           abv={keg.abv}
           price={keg.price}

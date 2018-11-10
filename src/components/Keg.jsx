@@ -1,5 +1,12 @@
 import React from 'react';
+import WebFont from 'webfontloader';
 import PropTypes from 'prop-types';
+
+WebFont.load({
+  google: {
+    families: ['Roboto Slab']
+  }
+});
 
 function Keg(props) {
   return(
@@ -13,12 +20,22 @@ function Keg(props) {
           flex-direction: column;
           align-items: center;
           width: 380px;
-          height: 450px;
+          height: 380px;
           border: 2px solid #2B303A;
           border-radius: 5px;
           background-color: #7A7265;
           font-family: helvetica;
           color: #F7F3E3;
+        }
+        .align-text {
+          text-align: center;
+        }
+        .beer-name {
+          font-family: 'Roboto Slab';
+          color: #DE9151
+        }
+        .abv {
+          font-style: italic;
         }
         .pints-remaining {
           border-top: 1px solid black;
@@ -26,12 +43,16 @@ function Keg(props) {
         }
       `}</style>
       <div className="keg-info">
-        <h1>{props.name}</h1>
-        <h2>{props.brewer}</h2>
-        <h3>{props.type}</h3>
-        <h3>ABV: {props.abv}</h3>
-        <h3>${props.price}</h3>
-        <h3 className="pints-remaining">Pints remaining: {props.pints}</h3>
+        <div className="align-text">
+          <h2 className="beer-name">{props.name}</h2>
+          <h3 className="abv">{props.type}</h3>
+        </div>
+        <div className="align-text location">
+          <h3>{props.brewer}</h3>
+          <h4>{props.location}</h4>
+        </div>
+        <h4>ABV: {props.abv} | Price: ${props.price}</h4>
+        <h4 className="pints-remaining">Pints remaining: {props.pints}</h4>
       </div>
     </div>
   );
