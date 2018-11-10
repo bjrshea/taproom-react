@@ -16,8 +16,9 @@ This project uses React to build a taproom that allows admins to update their ke
 
 * **App Component:** houses all the other components in the application and is rendered in **index.jsx**.
 * **Header Component:** header with logo.
-* **Keg List Component:** a list of all the kegs at the taproom.
-* **New Component:** allows you to add a new keg to the keg list -- also, a child of the keg list component.
+* **Keg List Component:** loops through a hard coded database of kegs.
+* **Keg Component:** passes props to display the kegs that were looped through in the keg list component.
+* **Admin Component:** allows admins to sell pints, change prices, etc.
 * **404 Error Component:** a 404 error page that you're routed to if a wrong URL is used.
 
 ## Install Instructions
