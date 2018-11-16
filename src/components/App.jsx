@@ -73,6 +73,7 @@ class App extends React.Component {
         }
       ]
     };
+    this.handlePintSale = this.handlePintSale.bind(this);
   }
 
   handlePintSale(position) {
@@ -99,7 +100,7 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/' render={()=><KegList kegList={this.state.masterKegList} />} />
-          <Route path='/admin' component={Admin} />
+          <Route path='/admin' render={()=><Admin kegList={this.state.masterKegList} onPintSale={this.state.handlePintSale}/>} />
           <Route component={Error404} />
         </Switch>
       </div>

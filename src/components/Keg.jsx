@@ -39,10 +39,6 @@ function Keg(props) {
         .abv {
           font-style: italic;
         }
-        .pints-remaining {
-          border-top: 1px solid black;
-          padding-top: 30px;
-        }
         .brewers {
           width: 61px;
           height: 186px;
@@ -58,7 +54,7 @@ function Keg(props) {
           <h2 className="beer-name">{props.name}</h2>
           <h3 className="abv">{props.type}</h3>
         </div>
-        <div className="align-text location">
+        <div className="align-text">
           <h3>{props.brewer}</h3>
           <h4>{props.location}</h4>
         </div>

@@ -22,7 +22,6 @@ function KegList(props) {
           type={keg.type}
           abv={keg.abv}
           price={keg.price}
-          pints={keg.pints}
           url={keg.url}
           key={index}/>
       )}

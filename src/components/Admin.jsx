@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
-function Admin() {
+function Admin(props) {
   return(
     <div className="admin-box">
       <style>{`
@@ -35,5 +36,9 @@ function Admin() {
     </div>
   );
 }
+
+// Admin.propTypes = {
+//   sellPint: PropType.func
+// }
 
 export default Admin;
