@@ -16,6 +16,7 @@ function KegList(props) {
       `}</style>
       {props.kegList.map((keg, index) =>
         <Keg
+          currentRouterPath={props.currentRouterPath}
           name={keg.name}
           brewer={keg.brewer}
           location={keg.location}
@@ -30,7 +31,8 @@ function KegList(props) {
 }
 
 KegList.propTypes = {
-  kegList: PropTypes.array
+  kegList: PropTypes.array,
+  currentRouterPath: PropTypes.string
 };
 
 export default KegList;
