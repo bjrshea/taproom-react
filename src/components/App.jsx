@@ -12,13 +12,14 @@ class App extends React.Component {
     this.state = {
       masterKegList: [
         {
-          name: 'Vaporizer',
-          brewer: 'Double Mountain',
+          name: 'Not Irish',
+          brewer: 'Old Town',
           location: 'Portland, OR',
-          type: 'IPA',
-          abv: '7.2%',
-          price: 6,
-          pints: 124
+          type: 'Red Ale',
+          abv: '5.6%',
+          price: 5,
+          pints: 124,
+          url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/OldTownPauliesNotIrish.png'
         },
         {
           name: 'What Rough Beast',
@@ -27,7 +28,8 @@ class App extends React.Component {
           type: 'IPA',
           abv: '6.8%',
           price: 5,
-          pints: 124
+          pints: 124,
+          url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/BreaksideWhatRoughBeast.png'
         },
         {
           name: 'Turmoil',
@@ -36,7 +38,8 @@ class App extends React.Component {
           type: 'Cascadian Dark Ale',
           abv: '7.8%',
           price: 7,
-          pints: 124
+          pints: 124,
+          url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/BarleyBrownsTurmoil.png'
         },
         {
           name: 'Bodhizafa',
@@ -45,7 +48,8 @@ class App extends React.Component {
           type: 'IPA',
           abv: '6.9%',
           price: 6,
-          pints: 124
+          pints: 124,
+          url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/GeorgetownBodhizafa.png'
         },
         {
           name: 'Straight Outta Portland',
@@ -54,7 +58,8 @@ class App extends React.Component {
           type: 'IPA',
           abv: '7.3%',
           price: 6,
-          pints: 124
+          pints: 124,
+          url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/MigrationStraightOuttaPortland.png'
         },
         {
           name: 'Chocolate Shake',
@@ -63,7 +68,8 @@ class App extends React.Component {
           type: 'Porter',
           abv: '5.9%',
           price: 5,
-          pints: 124
+          pints: 124,
+          url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/BoulderBeerChocolateShake.png'
         }
       ]
     };
