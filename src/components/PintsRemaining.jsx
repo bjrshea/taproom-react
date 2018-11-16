@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import pint from '../assets/images/pint.png';
 
 function PintsRemaining(props) {
   return (
@@ -20,10 +21,12 @@ function PintsRemaining(props) {
           background-color: #BF583F;
           float: left;
         }
+        .image-size {
+          height: 100px;
+          width: 60px;
+        }
       `}</style>
-      <div className="total-beer">
-        <div className="remaining-beer"></div>
-      </div>
+    <img className="image-size" src={pint}/>
     </div>
   );
 }

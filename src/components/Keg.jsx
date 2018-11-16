@@ -50,6 +50,8 @@ function Keg(props) {
     }
     .pints-left {
       position: absolute;
+      top: 58%;
+      right: 2%;
     }
   `}</style>;
   if (props.currentRouterPath === '/admin') {
@@ -82,9 +84,6 @@ function Keg(props) {
         <div className="keg-info">
           <div className="align-text">
             <h2 className="beer-name">{props.name}</h2>
-            <div className="pints-left">
-              <PintsRemaining/>
-            </div>
             <h3 className="abv">{props.type}</h3>
           </div>
           <div className="align-text">
@@ -94,6 +93,9 @@ function Keg(props) {
           <h4>ABV: {props.abv} | Price: ${props.price}</h4>
           <div className="image-container">
             <img className="brewers" src={props.url}/>
+          </div>
+          <div className="pints-left">
+            <PintsRemaining/>
           </div>
         </div>
       </div>
