@@ -4,16 +4,7 @@ import KegList from './KegList';
 
 function Admin(props) {
   return(
-    <div className="admin-box">
-      <style>{`
-        .admin-box {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          margin-top: 7%;
-          margin-bottom: 7%;
-        }
-      `}</style>
+    <div>
       <KegList kegList={props.kegList} />
     </div>
   );
