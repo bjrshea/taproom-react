@@ -17,17 +17,17 @@ function Keg(props) {
           margin-bottom: 2%;
         }
         .keg-info {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          position: relative;
+          text-align: center;
           width: 380px;
-          height: 380px;
+          height: 240px;
           border: 2px solid #2B303A;
           border-radius: 5px;
           background-color: #7A7265;
           box-shadow: 5px 5px 25px #2B303A;
           font-family: helvetica;
           color: #F7F3E3;
+          overflow: hidden;
         }
         .align-text {
           text-align: center;
@@ -43,6 +43,15 @@ function Keg(props) {
           border-top: 1px solid black;
           padding-top: 30px;
         }
+        .brewers {
+          width: 61px;
+          height: 186px;
+        }
+        .image-container {
+          position: absolute;
+          top: 23%;
+          left: 5%;
+        }
       `}</style>
       <div className="keg-info">
         <div className="align-text">
@@ -54,7 +63,9 @@ function Keg(props) {
           <h4>{props.location}</h4>
         </div>
         <h4>ABV: {props.abv} | Price: ${props.price}</h4>
-        <h4 className="pints-remaining">Pints remaining: {props.pints}</h4>
+        <div className="image-container">
+          <img className="brewers" src={props.url}/>
+        </div>
       </div>
     </div>
   );
