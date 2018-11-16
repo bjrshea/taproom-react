@@ -100,7 +100,7 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/' render={()=><KegList kegList={this.state.masterKegList} />} />
-          <Route path='/admin' render={()=><Admin kegList={this.state.masterKegList} onPintSale={this.state.handlePintSale}/>} />
+          <Route path='/admin' render={(props)=><Admin kegList={this.state.masterKegList} currentRouterPath={props.location.pathname} onPintSale={this.state.handlePintSale}/>} />
           <Route component={Error404} />
         </Switch>
       </div>

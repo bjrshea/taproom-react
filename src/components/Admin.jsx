@@ -3,15 +3,19 @@ import PropTypes from 'prop-types';
 import KegList from './KegList';
 
 function Admin(props) {
+  console.log(props.currentRouterPath);
   return(
     <div>
-      <KegList kegList={props.kegList} />
+      <KegList
+        kegList={props.kegList}
+        currentRouterPath={props.currentRouterPath}/>
     </div>
   );
 }
 
 Admin.propTypes = {
-  ticketList: PropTypes.array
+  ticketList: PropTypes.array,
+  currentRouterPath: PropTypes.string.isRequired
 };
 
 export default Admin;
