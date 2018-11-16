@@ -63,6 +63,7 @@ function Keg(props) {
           <img className="brewers" src={props.url}/>
         </div>
       </div>
+      <p>{props.pints}</p>
     </div>
   );
 }
