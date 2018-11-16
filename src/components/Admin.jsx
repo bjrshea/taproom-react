@@ -7,6 +7,7 @@ function Admin(props) {
     <div>
       <KegList
         kegList={props.kegList}
+        onPintSale={props.onPintSale}
         currentRouterPath={props.currentRouterPath}/>
     </div>
   );
@@ -14,6 +15,7 @@ function Admin(props) {
 
 Admin.propTypes = {
   ticketList: PropTypes.array,
+  onPintSale: PropTypes.func,
   currentRouterPath: PropTypes.string.isRequired
 };
 

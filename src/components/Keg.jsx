@@ -58,10 +58,13 @@ function Keg(props) {
             <h3 className="abv">{props.type}</h3>
           </div>
           <div className="align-text">
-            <button>Sell a pint</button>
+            <h4>Price: ${props.price}</h4>
+            <h4>Pints remaining: {props.pints}</h4>
+          </div>
+          <div className="buttons">
+            <button onClick={props.onPintSale}>Sell a pint</button>
             <button>Edit pint's price</button>
           </div>
-          <h4>ABV: {props.abv} | Price: ${props.price}</h4>
           <div className="image-container">
             <img className="brewers" src={props.url}/>
           </div>
@@ -98,7 +101,8 @@ Keg.propTypes = {
   abv: PropTypes.string,
   price: PropTypes.number,
   pints: PropTypes.number,
-  currentRouterPath: PropTypes.string
+  currentRouterPath: PropTypes.string,
+  onPintSale: PropTypes.func
 };
 
 export default Keg;
