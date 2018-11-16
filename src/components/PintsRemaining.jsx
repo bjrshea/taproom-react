@@ -8,25 +8,25 @@ function PintsRemaining(props) {
       <style>{`
         .beer-container {
           height: 50px;
-          width: 100px;
+          width: 120px;
         }
         .total-beer {
+          border-radius: 25px;
           width: 100%;
           height: 20px;
           background-color: #FFF;
         }
         .remaining-beer {
+          border-radius: 25px;
           width: 90%;
           height: 100%;
           background-color: #BF583F;
           float: left;
         }
-        .image-size {
-          height: 100px;
-          width: 60px;
-        }
       `}</style>
-    <img className="image-size" src={pint}/>
+      <div className="total-beer">
+        <div className="remaining-beer"></div>
+      </div>
     </div>
   );
 }

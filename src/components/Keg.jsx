@@ -20,7 +20,7 @@ function Keg(props) {
       position: relative;
       text-align: center;
       width: 380px;
-      height: 240px;
+      height: 280px;
       border: 2px solid #2B303A;
       border-radius: 5px;
       background-color: #7A7265;
@@ -29,8 +29,9 @@ function Keg(props) {
       color: #F7F3E3;
       overflow: hidden;
     }
-    .align-text {
-      text-align: center;
+    .keg-header {
+      border-bottom: 2px solid white;
+      height: 80px;
     }
     .beer-name {
       font-family: 'Roboto Slab';
@@ -45,13 +46,13 @@ function Keg(props) {
     }
     .image-container {
       position: absolute;
-      top: 23%;
+      top: 34%;
       left: 5%;
     }
     .pints-left {
       position: absolute;
-      top: 58%;
-      right: 2%;
+      top: 24%;
+      right: 35%;
     }
   `}</style>;
   if (props.currentRouterPath === '/admin') {
@@ -82,20 +83,18 @@ function Keg(props) {
       <div className="keg-box">
         {styles}
         <div className="keg-info">
-          <div className="align-text">
+          <div className="keg-header">
             <h2 className="beer-name">{props.name}</h2>
-            <h3 className="abv">{props.type}</h3>
+            <div className="pints-left">
+              <PintsRemaining/>
+            </div>
           </div>
-          <div className="align-text">
-            <h3>{props.brewer}</h3>
-            <h4>{props.location}</h4>
-          </div>
+          <h3 className="abv">{props.type}</h3>
+          <h3>{props.brewer}</h3>
+          <h4>{props.location}</h4>
           <h4>ABV: {props.abv} | Price: ${props.price}</h4>
           <div className="image-container">
             <img className="brewers" src={props.url}/>
-          </div>
-          <div className="pints-left">
-            <PintsRemaining/>
           </div>
         </div>
       </div>
