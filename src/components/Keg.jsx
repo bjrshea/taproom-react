@@ -62,7 +62,7 @@ function Keg(props) {
             <h4>Pints remaining: {props.pints}</h4>
           </div>
           <div className="buttons">
-            <button onClick={props.onPintSale}>Sell a pint</button>
+            <button onClick={() => {props.onPintSale(props.id);}}>Sell a pint</button>
             <button>Edit pint's price</button>
           </div>
           <div className="image-container">
@@ -89,6 +89,7 @@ function Keg(props) {
             <img className="brewers" src={props.url}/>
           </div>
         </div>
+        <h4>Pints remaining: {props.pints}</h4>
       </div>
     );
   }

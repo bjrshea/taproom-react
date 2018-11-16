@@ -19,6 +19,7 @@ class App extends React.Component {
           abv: '5.6%',
           price: 5,
           pints: 124,
+          id: 0,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/OldTownPauliesNotIrish.png'
         },
         {
@@ -29,6 +30,7 @@ class App extends React.Component {
           abv: '6.8%',
           price: 5,
           pints: 124,
+          id: 1,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/BreaksideWhatRoughBeast.png'
         },
         {
@@ -39,6 +41,7 @@ class App extends React.Component {
           abv: '7.8%',
           price: 7,
           pints: 124,
+          id: 2,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/BarleyBrownsTurmoil.png'
         },
         {
@@ -49,6 +52,7 @@ class App extends React.Component {
           abv: '6.9%',
           price: 6,
           pints: 124,
+          id: 3,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/GeorgetownBodhizafa.png'
         },
         {
@@ -59,6 +63,7 @@ class App extends React.Component {
           abv: '7.3%',
           price: 6,
           pints: 124,
+          id: 4,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/MigrationStraightOuttaPortland.png'
         },
         {
@@ -69,6 +74,7 @@ class App extends React.Component {
           abv: '5.9%',
           price: 5,
           pints: 124,
+          id: 5,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/BoulderBeerChocolateShake.png'
         }
       ]
@@ -76,12 +82,12 @@ class App extends React.Component {
     this.handlePintSale = this.handlePintSale.bind(this);
   }
 
-  handlePintSale(position) {
+  handlePintSale(id) {
     let newMasterKegList = this.state.masterKegList.slice();
-    let sellPint = Object.assign({}, newMasterKegList[position]);
-    let newPintAmount = sellPint.pints - 1;
-    sellPint.pints = newPintAmount;
-    newMasterKegList[position] = sellPint;
+    let newPint = Object.assign({}, newMasterKegList[id]);
+    let newPintAmount = newPint.pints - 1;
+    newPint.pints = newPintAmount;
+    newMasterKegList[id] = newPint;
     this.setState({
       masterKegList: newMasterKegList
     });
