@@ -1,6 +1,7 @@
 import React from 'react';
 import WebFont from 'webfontloader';
 import PropTypes from 'prop-types';
+import PintsRemaining from './PintsRemaining';
 
 WebFont.load({
   google: {
@@ -90,6 +91,7 @@ function Keg(props) {
           </div>
         </div>
         <h4>Pints remaining: {props.pints}</h4>
+        <PintsRemaining/>
       </div>
     );
   }
