@@ -1,8 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import pint from '../assets/images/pint.png';
 
 function PintsRemaining(props) {
+  console.log(props.id)
+  const remainingBeer = {
+    borderRadius: '25px',
+    width: `${props.pints}%`,
+    height: '100%',
+    backgroundColor: '#BF583F',
+    float: 'left'
+  }
   return (
     <div className="beer-container">
       <style>{`
@@ -16,19 +23,17 @@ function PintsRemaining(props) {
           height: 20px;
           background-color: #FFF;
         }
-        .remaining-beer {
-          border-radius: 25px;
-          width: 90%;
-          height: 100%;
-          background-color: #BF583F;
-          float: left;
-        }
       `}</style>
       <div className="total-beer">
-        <div className="remaining-beer"></div>
+        <div id={props.id} style={remainingBeer}></div>
       </div>
     </div>
   );
 }
+
+PintsRemaining.propTypes = {
+  id: PropTypes.number,
+  pints: PropTypes.number
+};
 
 export default PintsRemaining;

@@ -18,7 +18,7 @@ class App extends React.Component {
           type: 'Red Ale',
           abv: '5.6%',
           price: 5,
-          pints: 124,
+          pints: 100,
           id: 0,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/OldTownPauliesNotIrish.png'
         },
@@ -29,7 +29,7 @@ class App extends React.Component {
           type: 'IPA',
           abv: '6.8%',
           price: 5,
-          pints: 124,
+          pints: 100,
           id: 1,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/BreaksideWhatRoughBeast.png'
         },
@@ -40,7 +40,7 @@ class App extends React.Component {
           type: 'Cascadian Dark Ale',
           abv: '7.8%',
           price: 7,
-          pints: 124,
+          pints: 100,
           id: 2,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/BarleyBrownsTurmoil.png'
         },
@@ -51,7 +51,7 @@ class App extends React.Component {
           type: 'IPA',
           abv: '6.9%',
           price: 6,
-          pints: 124,
+          pints: 100,
           id: 3,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/GeorgetownBodhizafa.png'
         },
@@ -62,7 +62,7 @@ class App extends React.Component {
           type: 'IPA',
           abv: '7.3%',
           price: 6,
-          pints: 124,
+          pints: 100,
           id: 4,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/MigrationStraightOuttaPortland.png'
         },
@@ -73,7 +73,7 @@ class App extends React.Component {
           type: 'Porter',
           abv: '5.9%',
           price: 5,
-          pints: 124,
+          pints: 100,
           id: 5,
           url: 'https://www.thegrowlerguys.com/wp-content/uploads/taphandles/BoulderBeerChocolateShake.png'
         }

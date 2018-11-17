@@ -86,7 +86,7 @@ function Keg(props) {
           <div className="keg-header">
             <h2 className="beer-name">{props.name}</h2>
             <div className="pints-left">
-              <PintsRemaining/>
+              <PintsRemaining pints={props.pints} id={props.id}/>
             </div>
           </div>
           <h3 className="abv">{props.type}</h3>
