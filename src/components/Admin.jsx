@@ -8,6 +8,8 @@ function Admin(props) {
       <KegList
         kegList={props.kegList}
         onPintSale={props.onPintSale}
+        onPriceIncrease={props.onPriceIncrease}
+        onPriceDecrease={props.onPriceDecrease}
         currentRouterPath={props.currentRouterPath}/>
     </div>
   );
@@ -16,6 +18,8 @@ function Admin(props) {
 Admin.propTypes = {
   ticketList: PropTypes.array,
   onPintSale: PropTypes.func,
+  onPriceIncrease: PropTypes.func,
+  onPriceDecrease: PropTypes.func,
   currentRouterPath: PropTypes.string.isRequired
 };
 

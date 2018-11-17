@@ -18,6 +18,8 @@ function KegList(props) {
         <Keg
           currentRouterPath={props.currentRouterPath}
           onPintSale={props.onPintSale}
+          onPriceIncrease={props.onPriceIncrease}
+          onPriceDecrease={props.onPriceDecrease}
           name={keg.name}
           brewer={keg.brewer}
           location={keg.location}
@@ -36,7 +38,9 @@ function KegList(props) {
 KegList.propTypes = {
   kegList: PropTypes.array,
   currentRouterPath: PropTypes.string,
-  onPintSale: PropTypes.func
+  onPintSale: PropTypes.func,
+  onPriceIncrease: PropTypes.func,
+  onPriceDecrease: PropTypes.func
 };
 
 export default KegList;

@@ -30,12 +30,12 @@ function Keg(props) {
       overflow: hidden;
     }
     .keg-header {
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid #2B303A;
       height: 80px;
     }
     .beer-name {
       font-family: 'Roboto Slab';
-      color: #DE9151
+      color: #F7F3E3
     }
     .abv {
       font-style: italic;
@@ -54,6 +54,10 @@ function Keg(props) {
       top: 24%;
       right: 35%;
     }
+    .buttons button {
+      font-family: helvetica;
+      border-radius: 25px;
+    }
   `}</style>;
   if (props.currentRouterPath === '/admin') {
     return(
@@ -64,13 +68,14 @@ function Keg(props) {
             <h2 className="beer-name">{props.name}</h2>
             <h3 className="abv">{props.type}</h3>
           </div>
-          <div className="align-text">
-            <h4>Price: ${props.price}</h4>
-            <h4>Pints remaining: {props.pints}</h4>
+          <h4>Price: ${props.price}</h4>
+          <div className="buttons">
+            <button onClick={() => {props.onPriceIncrease(props.id);}}>+</button>
+            <button onClick={() => {props.onPriceDecrease(props.id);}}>-</button>
           </div>
+          <h4>Pints remaining: {props.pints}</h4>
           <div className="buttons">
             <button onClick={() => {props.onPintSale(props.id);}}>Sell a pint</button>
-            <button>Edit pint's price</button>
           </div>
           <div className="image-container">
             <img className="brewers" src={props.url}/>

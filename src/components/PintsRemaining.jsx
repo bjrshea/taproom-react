@@ -2,13 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function PintsRemaining(props) {
-  console.log(props.id)
   const remainingBeer = {
     borderRadius: '25px',
     width: `${props.pints}%`,
     height: '100%',
-    backgroundColor: '#BF583F',
-    float: 'left'
+    backgroundColor: '#DE9151'
   }
   return (
     <div className="beer-container">
@@ -21,7 +19,7 @@ function PintsRemaining(props) {
           border-radius: 25px;
           width: 100%;
           height: 20px;
-          background-color: #FFF;
+          background-color: #F7F3E3;
         }
       `}</style>
       <div className="total-beer">

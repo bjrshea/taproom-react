@@ -80,6 +80,8 @@ class App extends React.Component {
       ]
     };
     this.handlePintSale = this.handlePintSale.bind(this);
+    this.handlePriceIncrease = this.handlePriceIncrease.bind(this);
+    this.handlePriceDecrease = this.handlePriceDecrease.bind(this);
   }
 
   handlePintSale(id) {
@@ -88,6 +90,28 @@ class App extends React.Component {
     let newPintAmount = newPint.pints - 1;
     newPint.pints = newPintAmount;
     newMasterKegList[id] = newPint;
+    this.setState({
+      masterKegList: newMasterKegList
+    });
+  }
+
+  handlePriceIncrease(id) {
+    let newMasterKegList = this.state.masterKegList.slice();
+    let newPrice = Object.assign({}, newMasterKegList[id]);
+    let newPriceAmount = newPrice.price + 1;
+    newPrice.price = newPriceAmount;
+    newMasterKegList[id] = newPrice;
+    this.setState({
+      masterKegList: newMasterKegList
+    });
+  }
+
+  handlePriceDecrease(id) {
+    let newMasterKegList = this.state.masterKegList.slice();
+    let newPrice = Object.assign({}, newMasterKegList[id]);
+    let newPriceAmount = newPrice.price - 1;
+    newPrice.price = newPriceAmount;
+    newMasterKegList[id] = newPrice;
     this.setState({
       masterKegList: newMasterKegList
     });
@@ -106,7 +130,7 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/' render={()=><KegList kegList={this.state.masterKegList} />} />
-          <Route path='/admin' render={(props)=><Admin kegList={this.state.masterKegList} currentRouterPath={props.location.pathname} onPintSale={this.handlePintSale} />} />
+          <Route path='/admin' render={(props)=><Admin kegList={this.state.masterKegList} currentRouterPath={props.location.pathname} onPintSale={this.handlePintSale} onPriceIncrease={this.handlePriceIncrease} onPriceDecrease={this.handlePriceDecrease} />} />
           <Route component={Error404} />
         </Switch>
       </div>
